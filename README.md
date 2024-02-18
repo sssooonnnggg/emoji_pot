@@ -1,11 +1,15 @@
 # Emoji POT
-Fix emoji sprite sheet to POT (power of two) size.
+Fix emoji sprite sheet to POT (power of two) size to fix TextMeshPro issues in Unity.
+Source sprite sheet can be found at https://github.com/iamcal/emoji-data
 
 # Basic Usage
 
 ```sh
 emoji_pot -i sheet_google_32.png
 ```
+
+If successful, the output will be a file named `sheet_google_32_pot.png` in the same directory as the input file.
+Input sprite sheet should be any sprite sheet with 32x32 emoji images, the output file will be a 2048x2048 sprite sheet with 30x30 emoji images by default.
 
 # Advance Usage
 
