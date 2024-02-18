@@ -1,0 +1,16 @@
+[package]
+name = "emoji_pot"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/sssooonnnggg/emoji_pot"
+description = "A tool used to generate emoji POT texture"
+
+[dependencies]
+anyhow = "1.0.79"
+clap = { version = "4.4.6", features = ["derive"] }
+image = "0.24.7"
+
+[[bin]]
+name = "emoji_pot"
+path = "src/main.rs"
